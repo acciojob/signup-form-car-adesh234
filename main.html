@@ -7,7 +7,46 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<main>
+		<form action="/submit" method="post">
+			<label for="name">Enter Name</label>
+			<input id="name" type="text" name="name" required placeholder="name"><br>
+
+			<label for="email">Enter Email</label>
+			<input id="email" type="text" name="email" required placeholder="email"><br>
+
+			<p>Gender</p>
+			<label for="gender_m">Male</label>
+			<input type="radio" id="gender_m" name="gender" required>
+			<label for="gender_f">Female</label>
+			<input type="radio" id="gender_f" name="gender" required><br>
+
+			<select id="cars" aria-required >
+				<option id="cars" value="">--Please choose an option--</option>
+				<option value="1" id="cars">BMW</option>
+				<option value="2" id="cars">Audi</option>
+				<option value="3" id="cars">Mercedez</option>
+			</select><br>
+
+			<label for="age">Enter Age</label>
+			<input id="age" type="text" name="age" required><br>
+
+			<label for="dob">Enter D.O.B</label>
+			<input id="dob" type="date" name="dob" required><br>
+
+			<label for="tel">Enter Phone no.</label>
+			<input type="tel" id="tel" name="tel"><br>
+
+			<label for="password">Enter password</label>
+			<input id="password" type="password" name="password" required placeholder="passsword"><br>
+
+			<label for="tos">I agree to the TOS</label>
+			<input type="checkbox" id="tos" name="tos" required>
+			
+			<br>
+			<button>Submit</button>
+		</form>
+	</main>
     <script type="text/javascript" src="./script.js">
 </script>
 
